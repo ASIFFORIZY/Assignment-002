@@ -93,6 +93,12 @@ body {
     .hide{
         display: none;
     }
+
+    .navbar ul {
+  
+  gap: 0px;
+  align-items: center;
+}
 }
 
 
@@ -131,8 +137,13 @@ body {
     }
 
     .welcome-title{
-    font-size: 3rem;
+    font-size: 2.8rem;
+    margin-top: 0px;
 
+    }
+
+    .hero-bg{
+      margin-bottom: 30px;
     }
 
     .hero-text{
