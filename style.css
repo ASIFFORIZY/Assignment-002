@@ -296,6 +296,24 @@ margin-top: 210px;
 gap: 60px;
 }
 
+.review-img {
+  position: relative;
+  display: inline-block;
+}
+
+.review-img img {
+  display: block;
+  height: auto;
+}
+
+.review-img .badge {
+  position: absolute;
+  top: -130px;   
+  right: -100px; 
+  width: 250px; 
+  height: auto;
+}
+
 .review-title{
     font-size: 3.1rem;
     font-family: noto serif;
@@ -319,9 +337,13 @@ main section ul li {
         text-align: center;
     }
 
+    .review-img .badge {
+    display: none;
+  }
     .review img{
         width: 100%;
         height: auto;
+        box-shadow: 0 12px 24px rgba(0,0,0,0.2);
     }
 
     main section ul li {
@@ -337,8 +359,6 @@ main section ul li {
 
 /* deals styles */
 
-/* Import font */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
 body {
   font-family: 'Inter', sans-serif;
@@ -372,6 +392,7 @@ body {
   grid-template-columns: 1fr 2fr;
   gap: 20px;
   align-items: center;
+  
 }
 
 .left-column {
@@ -379,6 +400,7 @@ body {
   grid-template-rows: 1fr 1fr;
   gap: 20px;
   height: 100%;
+  
 }
 
 .deal-card {
@@ -427,7 +449,7 @@ body {
   cursor: pointer;
 }
 
-/* Mobile Responsive Styles */
+
 @media (max-width: 576px) {
   .deal-section {
     padding: 40px 20px;
@@ -442,9 +464,9 @@ body {
   }
 
   .deal-grid {
-    grid-template-columns: 1fr; /* Stack columns */
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
-    height: auto; /* Let content decide height */
+    height: auto;
   }
 
   .left-column {
@@ -453,11 +475,11 @@ body {
   }
 
   .deal-card {
-    height: 200px; /* Adjust height for mobile cards */
+    height: 200px; 
   }
 
   .zabo {
-    height: 200px; /* Taller card for visual balance */
+    height: 200px;
   }
 
   .deal-text h3 {
